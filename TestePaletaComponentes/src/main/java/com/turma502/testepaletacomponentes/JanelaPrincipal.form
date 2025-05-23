@@ -11,6 +11,9 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="itemCadCursos">
               <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Shift+Ctrl+C"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Cursos"/>
               </Properties>
               <Events>
@@ -19,8 +22,14 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="itemCadTurmas">
               <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Shift+Ctrl+T"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Turmas"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itemCadTurmasActionPerformed"/>
+              </Events>
             </MenuItem>
           </SubComponents>
         </Menu>

@@ -49,6 +49,7 @@ public class JanelaPrincipal extends javax.swing.JFrame {
 
         menuCadastros.setText("Cadastros");
 
+        itemCadCursos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.SHIFT_DOWN_MASK | java.awt.event.InputEvent.CTRL_DOWN_MASK));
         itemCadCursos.setText("Cursos");
         itemCadCursos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -57,7 +58,13 @@ public class JanelaPrincipal extends javax.swing.JFrame {
         });
         menuCadastros.add(itemCadCursos);
 
+        itemCadTurmas.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_T, java.awt.event.InputEvent.SHIFT_DOWN_MASK | java.awt.event.InputEvent.CTRL_DOWN_MASK));
         itemCadTurmas.setText("Turmas");
+        itemCadTurmas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                itemCadTurmasActionPerformed(evt);
+            }
+        });
         menuCadastros.add(itemCadTurmas);
 
         barraMenu.add(menuCadastros);
@@ -86,6 +93,12 @@ public class JanelaPrincipal extends javax.swing.JFrame {
         desktop.add(janelaCadastroCurso);
         janelaCadastroCurso.setVisible(true);
     }//GEN-LAST:event_itemCadCursosActionPerformed
+
+    private void itemCadTurmasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemCadTurmasActionPerformed
+        JanelaCadastroTurma janelaCadastroTurma = new JanelaCadastroTurma();
+        desktop.add(janelaCadastroTurma);
+        janelaCadastroTurma.setVisible(true);
+    }//GEN-LAST:event_itemCadTurmasActionPerformed
 
     /**
      * @param args the command line arguments
